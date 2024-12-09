@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.2 | 20191019
+   License: none (public domain)
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 0.01em;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #d3d3d3;
+  background: #131313;
+}
+
+.form {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  border: 2px solid #1c1c1c;
+  border-radius: 12px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 12px;
+  font-family: inherit;
+  border: 2px solid #1c1c1c;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #d3d3d3;
+  background: inherit;
+}
+.input:focus {
+  outline: 2px solid rgba(201, 201, 201, 0.4352941176);
+}
+.input__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input__label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.textarea {
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 240px;
+  min-height: 120px;
+  scrollbar-width: thin;
+  scrollbar-color: #d3d3d3 transparent;
+}
+
+.button {
+  display: flex;
+  align-self: flex-end;
+  padding: 8px 12px;
+  border: 2px solid #1c1c1c;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  color: inherit;
+  background: #1c1c1c;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  color: #1c1c1c;
+  background: #d3d3d3;
+} /*# sourceMappingURL=global.css.map */
+
+.container {
+  max-width: 1664px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding: 32px 0;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.header__logo {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.footer {
+  position: relative;
+
+  width: 100%;
+  padding: 16px 0;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #3d3d3d;
+}

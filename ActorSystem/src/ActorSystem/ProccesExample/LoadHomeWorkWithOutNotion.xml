@@ -1,0 +1,11 @@
+<ActorSystem>
+    <DBWriter>
+        <Name>WriteInDB</Name>
+        <Collection>StudentHomeWorks</Collection>
+        <Keys>
+            <Key>Group</Key>
+            <Key>TaskNameName</Key>
+            <Key>Description</Key>
+        </Keys>
+    </DBWriter>
+</ActorSystem>

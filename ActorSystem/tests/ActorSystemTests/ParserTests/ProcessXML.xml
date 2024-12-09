@@ -1,0 +1,16 @@
+<ActorSystem>
+    <DBWriter>
+        <Name>WriteInDB</Name>
+        <Collection>StudentHomeWorks</Collection>
+        <Next>TaskStudentNotion</Next>
+        <Keys>
+            <Key>Group</Key>
+            <Key>TaskName</Key>
+            <Key>Description</Key>
+        </Keys>
+    </DBWriter>
+    <TaskNotificator>
+        <Name>TaskStudentNotion</Name>
+        <Collection>Students</Collection>
+    </TaskNotificator>
+</ActorSystem>

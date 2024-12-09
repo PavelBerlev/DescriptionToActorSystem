@@ -1,0 +1,30 @@
+﻿@page
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Форма отправки</title>
+</head>
+<body>
+    <form class="form" method="post" enctype="multipart/form-data" action="/api/forms/upload">
+        <div class="input__group">
+            <label class="input__label" for="title">Заголовок:</label>
+            <input class="input" type="text" id="title" name="title" required />
+        </div>
+        <div class="input__group">
+            <label class="input__label" for="group">Группа:</label>
+            <input class="input" type="text" id="group" name="group" required />
+        </div>
+        <div class="input__group">
+            <label class="input__label" for="description">Описание:</label>
+            <textarea class="input textarea" id="description" name="description" required></textarea>
+        </div>
+        <div class="input__group">
+            <label class="input__label" for="files">Файлы:</label>
+            <input class="input" type="file" id="files" name="files" multiple />
+        </div>
+        <button class="button" type="submit">Отправить</button>
+    </form>
+</body>
+</html>
