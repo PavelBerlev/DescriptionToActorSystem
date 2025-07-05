@@ -23,7 +23,7 @@ BPMN (Business Process Model and Notation) — система условных �
 ## Установка
 
 ```bash
-git clone https://github.com/username/ActorSystem.git
+git clone https://github.com/PavelKriko/DescriptionToActorSystem.git
 cd ActorSystem/src/ActorSystem
 docker compose up -d
 dotnet restore          
